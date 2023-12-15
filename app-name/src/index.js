@@ -1,26 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 import './index.css';
-
-//JSX de notre site
-import App from './component/App';
-import Nav from './component/Nav';
-import Footer from './component/Footer';
-import Banner from './component/Banner';
-
-import Main from './main';
+import App from './App';
+import ErrorPage from "./error-page";
 
 import reportWebVitals from './reportWebVitals';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />, // à changer
+    errorElement: <ErrorPage />
+  }
+]);
+
 
 //On affiche ici
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav />
-    <Banner />
-    <App />
-    <Footer />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
@@ -28,3 +32,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

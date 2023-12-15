@@ -4,12 +4,12 @@ import kasa from '../asset/kasa.json';
 let res = kasa;//json
 //console.table(res);
 
-function App() {
+function Gallery() {
   return (
     <div className="App">
       <header className="App-header">
       {res.map((tab) => (
-        <div key={ tab.id }>
+        <div href='#' key={ tab.id }>
           <p>{tab.title}</p>
         </div>
       ))}
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gallery;

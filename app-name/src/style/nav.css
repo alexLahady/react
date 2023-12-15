@@ -25,3 +25,13 @@
 .Nav-menu li:hover {
     text-decoration: underline;
 }
+
+ul a {
+    text-decoration: none;
+}
+ul a:link {
+    color: red;
+}
+ul a:visited {
+    color: red;
+}

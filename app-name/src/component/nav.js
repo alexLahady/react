@@ -7,8 +7,8 @@ function Nav() {
         <header className="Nav-header">
         <img src={logo} className='Nav-logo' alt='logo-ksas'/>
           <ul className='Nav-menu'>
-            <li> Accueil </li>
-            <li> À propos de</li>
+            <li><a href='./'>Accueil</a></li>
+            <li><a href='#'> À propos de</a></li>
           </ul>
         </header>
       </div>
