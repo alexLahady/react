@@ -1,5 +1,6 @@
 import '../style/Nav.css';
 import logo from '../images/logo.svg';
+import { Link } from "react-router-dom";
 
 function Nav() {
     return (
@@ -7,8 +8,8 @@ function Nav() {
         <header className="Nav-header">
         <img src={logo} className='Nav-logo' alt='logo-ksas'/>
           <ul className='Nav-menu'>
-            <li><a href='./'>Accueil</a></li>
-            <li><a href='#'> À propos de</a></li>
+            <li><Link to={'./'}>Accueil</Link></li>
+            <li><Link to={'./about'}>À propos de</Link></li>
           </ul>
         </header>
       </div>

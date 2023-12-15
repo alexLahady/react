@@ -7,6 +7,7 @@ import {
 
 import './index.css';
 import App from './App';
+import About from './pages/about';
 import ErrorPage from "./error-page";
 
 import reportWebVitals from './reportWebVitals';
@@ -14,7 +15,17 @@ import reportWebVitals from './reportWebVitals';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // à changer
+    element: <App />, 
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/about",
+    element: <About />, 
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/flat",
+    element: <div>Appartement</div>, 
     errorElement: <ErrorPage />
   }
 ]);

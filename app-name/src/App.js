@@ -11,8 +11,8 @@ function App(){
             <main>
                 <Banner />
                 <Gallery />
-                <Footer />
             </main>
+            <Footer />
         </div> 
     );
 }
