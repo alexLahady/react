@@ -1,0 +1,19 @@
+.Footer-header {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+.Footer-logo {
+    filter: brightness(100);
+    width: 10%; 
+    
+}
+
+.Footer-text {
+    margin-top: 30px;
+    margin-bottom: -30px;
+    font-size: 1.2em;
+    color: white;
+    
+}

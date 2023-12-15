@@ -1,14 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import './main';
 
+import './index.css';
+
+//JSX de notre site
+import App from './component/App';
+import Nav from './component/Nav';
+import Footer from './component/Footer';
+import Banner from './component/Banner';
+
+import Main from './main';
+
+import reportWebVitals from './reportWebVitals';
+
+//On affiche ici
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Nav />
+    <Banner />
     <App />
+    <Footer />
   </React.StrictMode>
 );
 

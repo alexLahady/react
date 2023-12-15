@@ -1,0 +1,27 @@
+.Nav {
+    padding: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Nav-header {
+    display: flex;
+   justify-content: space-between;
+}
+
+.Nav-logo {
+    width: 14%;
+}
+
+.Nav-menu {
+    display: flex;
+    gap: 100px;
+    font-size: 1.5em;
+    color: red;/*à changer */
+    list-style-type:none ;
+}
+
+/* à changer avec SASS*/
+.Nav-menu li:hover {
+    text-decoration: underline;
+}
