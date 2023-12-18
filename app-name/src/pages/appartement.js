@@ -1,34 +1,41 @@
 import React from 'react'; 
+
 import Nav from '../component/Nav';
 import Footer from '../component/Footer';
+
 import '../style/Appartement.scss';
 import kasa from '../asset/kasa.json';
 
-/* Faire une fonction qui va récupérer l'id et enregistrer et utiliser les bonnes données*/
+import {useParams} from 'react-router-dom';
 
-let tab = [];
-let i = 0;
+/* Faire une fonction qui va récupérer l'id et enregistrer et utiliser les bonnes données*/
+/*
 let resultat = window.location;
 let url = new URL(resultat);
 let id = url.searchParams.get("id");
 console.log(id);
-let res = {};
-for(let i=0; i<kasa.length;i++){
-    if(kasa[i].id === id){
-        res = kasa[i] ;
-        break;
+*/
+
+
+export default function Appatement(){
+    const parametres = useParams();
+    let res = {};
+    for(let i=0; i<kasa.length;i++){
+        if(kasa[i].id === parametres.id){
+            res = kasa[i] ;
+            break;
+        }
     }
-}
+    
+    let tab = [];
+    let i = 0;
 
-console.table(res);
+    while(i<5){
+        i < res.rating ? tab.push(true) : tab.push(false);
+        i++;
+    }
+    console.log(tab);
 
-while(i<5){
-    i < res.rating ? tab.push(true) : tab.push(false);
-    i++;
-}
-console.log(tab);
-
-function Appatement(){
     return (
         <div className="Appartement">
             <Nav />
@@ -85,4 +92,3 @@ function Appatement(){
     );
 }
 
-export default Appatement;
