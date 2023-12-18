@@ -1,4 +1,4 @@
-import '../style/App.css';
+import '../style/Gallery.scss';
 import kasa from '../asset/kasa.json';
 
 let res = kasa;//json

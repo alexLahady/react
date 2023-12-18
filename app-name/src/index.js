@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import './index.css';
+import './index.scss';
 import App from './App';
 import About from './pages/about';
 import ErrorPage from "./error-page";

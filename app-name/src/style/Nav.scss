@@ -1,3 +1,5 @@
+@import '../utils/variable';
+
 .Nav {
     padding: 40px;
     margin-left: 3%;
@@ -17,7 +19,7 @@
     display: flex;
     gap: 100px;
     font-size: 1.5em;
-    color: red;/*à changer */
+    color: $main-color;/*à changer */
     list-style-type:none ;
 }
 
@@ -28,10 +30,12 @@
 
 ul a {
     text-decoration: none;
-}
-ul a:link {
-    color: red;
-}
-ul a:visited {
-    color: red;
+
+    & a:link {
+        color: $main-color;
+    }
+
+    & a:visited {
+        color: $main-color;
+    }
 }
