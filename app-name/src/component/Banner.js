@@ -1,6 +1,7 @@
 import '../style/Banner.scss';
 import image from '../images/img-1.png'
 
+
 function Banner() {
     return (
       <div className="Banner">

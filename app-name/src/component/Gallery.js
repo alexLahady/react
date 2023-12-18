@@ -1,5 +1,7 @@
 import '../style/Gallery.scss';
 import kasa from '../asset/kasa.json';
+import { Link } from "react-router-dom";
+
 
 let res = kasa;//json
 //console.table(res);
@@ -9,9 +11,9 @@ function Gallery() {
     <div className="App">
       <header className="App-header">
       {res.map((tab) => (
-        <div href='#' key={ tab.id }>
+        <Link to={"./flat?id="+tab.id} key={ tab.id }>
           <p>{tab.title}</p>
-        </div>
+        </Link>
       ))}
       </header>
     </div>

@@ -8,6 +8,7 @@ import {
 import './index.scss';
 import App from './App';
 import About from './pages/about';
+import Appartement from './pages/appartement';
 import ErrorPage from "./error-page";
 
 import reportWebVitals from './reportWebVitals';
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/flat",
-    element: <div>Appartement</div>, 
+    element: <Appartement />, 
     errorElement: <ErrorPage />
   }
 ]);

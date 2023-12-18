@@ -24,18 +24,19 @@
 }
 
 /* à changer avec SASS*/
-.Nav-menu li:hover {
-    text-decoration: underline;
-}
 
 ul a {
     text-decoration: none;
 
-    & a:link {
+    & :link {
         color: $main-color;
     }
 
-    & a:visited {
+    & :visited {
         color: $main-color;
     }
+}
+
+ul a.active {
+    text-decoration: underline;
 }

@@ -1,6 +1,7 @@
 import React from 'react'; 
 import '../style/About.scss';
 import Nav from '../component/Nav';
+import Footer from '../component/Footer';
 import image from '../images/img-2.png';
 import about from '../asset/about.json';
 
@@ -13,7 +14,7 @@ function About(){
         <Nav />
         <div className="Banner">
             <header className="Banner-header">
-            <img src={image} className='Banner-img' alt='une montagne sur la mer' />
+                <img src={image} className='Banner-img' alt='une montagne sur la mer' />
             </header>
         </div>
         {about.map((tab) => (
@@ -25,6 +26,8 @@ function About(){
             <p>{tab.text}</p>
         </div>
       ))}
+
+      <Footer />
     </div> 
     );
 }
