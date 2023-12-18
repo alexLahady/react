@@ -9,12 +9,6 @@ import kasa from '../asset/kasa.json';
 import {useParams} from 'react-router-dom';
 
 /* Faire une fonction qui va récupérer l'id et enregistrer et utiliser les bonnes données*/
-/*
-let resultat = window.location;
-let url = new URL(resultat);
-let id = url.searchParams.get("id");
-console.log(id);
-*/
 
 
 export default function Appatement(){
@@ -34,7 +28,7 @@ export default function Appatement(){
         i < res.rating ? tab.push(true) : tab.push(false);
         i++;
     }
-    console.log(tab);
+    //console.log(tab);
 
     return (
         <div className="Appartement">

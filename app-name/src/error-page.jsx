@@ -1,6 +1,6 @@
 import { Link, useRouteError } from "react-router-dom";
 import Nav from './component/Nav.js';
-import './error-page.css';
+import './error-page.scss';
 
 
 export default function ErrorPage() {
@@ -13,7 +13,7 @@ export default function ErrorPage() {
       <h1 className='error-404'>404</h1>
       <p className='error-text'>Oups! la page que vous demandez n'existe pas.</p>
       <div className='error-link'> 
-        <Link to={'./'}>Retourner sur la page d'accueil</Link>
+        <Link to={'/'}>Retourner sur la page d'accueil</Link>
       </div>
     </div>
   );

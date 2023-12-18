@@ -1,12 +1,15 @@
+@import "./utils/variable.scss";
+
+
 .error-404 {
     text-align: center;
     margin:5%;
     font-size: 10em;
-    color: red;
+    color: $main-color;
 }
 
 .error-text {
-    color: red;
+    color: $main-color;
     text-align: center;
     font-size: 2em;
 }
@@ -17,11 +20,10 @@
     font-size: 1.5em;
 }
 
-/* à supprimer avec sass plus tard*/
-
 div a:link {
-    color: red;
+    color: $main-color;
 }
+
 div a:visited {
-    color: red;
+    color: $main-color;
 }
