@@ -5,6 +5,7 @@ import Nav from '../component/Nav';
 import Footer from '../component/Footer';
 import about from '../asset/about.json';
 import Banner from '../component/Banner';
+import Animation from '../component/Animation';
 
 import image from '../images/img-2.png';
 
@@ -16,16 +17,12 @@ function About(){
     <div>
         <Nav />
         {Banner(image,"paysage de montagne",false)}
-        {about.map((tab) => (
-        <div className="infos" key={tab.id}>
-          <div>
-                <h2>{tab.title}</h2>
-                <i class="fa-solid fa-chevron-up"></i>
-            </div>
-            <p>{tab.text}</p>
+        <div className="about-margin" >
+          {about.map((tab) => 
+            Animation(tab.id,tab.title,tab.text)
+          )}
+          
         </div>
-      ))}
-
       <Footer />
     </div> 
     );

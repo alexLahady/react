@@ -3,3 +3,71 @@
 
 
 /* c'est la ou il y aura le carré avec les aniamtion*/
+
+.anime-efface {
+    display: none;
+   
+}
+
+.anime {
+    position: relative;
+    margin : 20px;
+    margin-bottom: 100px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+
+    & div {
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 5px;
+        background-color: $main-color;
+        color:white;
+        border-radius: 10px;
+
+        & h2 {
+            margin: 10px;
+        }
+
+        & i {
+            margin: 10px;
+            font-size: 30px;
+
+            /*
+            &:hover {
+                animation-name: spin;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;      
+            }
+            */
+        }
+    } 
+
+    & p {
+        position: absolute;
+            left: 20px;
+            right: 20px;
+        z-index: 1;
+        margin-top: -10px;
+        padding: 20px;
+        padding-top:25px ;
+        color: $main-color;
+        background-color: $second-color;
+        border-radius:0px 0px 10px 10px ;
+
+        &:active {
+            scale: 10%; 
+        }
+        /*animation*/
+        //animation: 3s ease-in 1s 2 reverse both paused slidein;
+    }
+}
+
+.anime-margin {
+    margin-bottom: -25px;
+}
