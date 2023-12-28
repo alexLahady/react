@@ -7,6 +7,13 @@
     }
   }
   
+  @keyframes opacity {
+    from {
+      background: rgba(255, 255, 255, 0);
+    } to {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
   
   @keyframes slidein {
     from { transform: scaleY(0); }

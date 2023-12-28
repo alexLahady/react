@@ -2,6 +2,8 @@ import React from 'react';
 
 import Nav from '../component/Nav';
 import Footer from '../component/Footer';
+import Animation from '../component/Animation';
+import Slider from '../component/Slider';
 
 import '../style/Appartement.scss';
 import kasa from '../asset/kasa.json';
@@ -34,7 +36,7 @@ export default function Appatement(){
         <div className="Appartement">
             <Nav />
             <div className="banner-appart">
-                <img className="banner-appart-img" src={res.cover} alt={res.title} />
+                {Slider(res.pictures)}
             </div>
             <div className="grid-appart">
                 <div className="title-appart">
@@ -58,26 +60,10 @@ export default function Appatement(){
                     </span>
                 </div>
                 <div className="description-appart">
-                    <div className="infos">
-                        <div>
-                            <h2>Description</h2>
-                            <i class="fa-solid fa-chevron-up"></i>
-                        </div>
-                        <p>{res.description}</p>
-                    </div>
+                    {Animation(res.id+'desc','Description',res.description)}
                 </div>
-                <div className="equipement-appart">
-                    <div className="infos">
-                        <div>
-                            <h2>Équipement</h2>
-                            <i class="fa-solid fa-chevron-up"></i>
-                        </div>
-                        <p>
-                            <ul>
-                                {res.equipments.map((equip) => <li>{equip}</li>)}
-                            </ul>
-                        </p>
-                    </div>
+                <div className='equipement-appart'>
+                    {Animation(res.id+'equip','Équipement', <ul>{res.equipments.map((equip) => <li>{equip}</li>)}</ul>)}
                 </div>
             </div>
             <Footer />
