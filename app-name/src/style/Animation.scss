@@ -17,6 +17,12 @@
     margin-right: auto;
     padding: 20px;
 
+    @media( max-width: 798px){
+        margin-left: -35px;
+        margin-right: -35px;
+        margin-bottom: 130px;
+    }
+
 
     & div {
         position: relative;
@@ -60,9 +66,6 @@
         background-color: $second-color;
         border-radius:0px 0px 10px 10px ;
 
-        &:active {
-            scale: 10%; 
-        }
         /*animation*/
         //animation: 3s ease-in 1s 2 reverse both paused slidein;
     }

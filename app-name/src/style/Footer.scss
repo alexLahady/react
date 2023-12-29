@@ -3,11 +3,19 @@
     padding: 40px;
     text-align: center;
     margin-top:20px;
+
+    @media(max-width: 798px){
+        margin-top: 300px;
+    }
 }
 
 .Footer-logo {
     filter: brightness(100);
     width: 10%; 
+
+    @media(max-width: 798px){
+        width: 50%;
+    }
     
 }
 
@@ -17,4 +25,8 @@
     font-size: 1.2em;
     color: white;
     
+    @media(max-width: 798px){
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
 }

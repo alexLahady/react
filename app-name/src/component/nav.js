@@ -9,7 +9,7 @@ function Nav() {
         <img src={logo} className='Nav-logo' alt='logo-ksas'/>
           <ul className='Nav-menu'>
             <li><NavLink to={'/'}>Accueil</NavLink></li>
-            <li><NavLink to={'/about'}>À propos de</NavLink></li>
+            <li><NavLink to={'/about'}>À propos</NavLink></li>
           </ul>
         </header>
       </div>

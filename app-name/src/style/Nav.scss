@@ -2,17 +2,25 @@
 
 .Nav {
     padding: 40px;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 4%;
+    margin-right: 5%;
+    @media (max-width:798px) {
+        margin:0px;
+        padding: 12px;
+    }
 }
 
 .Nav-header {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .Nav-logo {
-    width: 14%;
+    width: 20%;
+
+    @media (max-width:798px) {
+        width: 40%;
+    }
 }
 
 .Nav-menu {
@@ -21,6 +29,11 @@
     font-size: 1.5em;
     color: $main-color;/*à changer */
     list-style-type:none ;
+
+    @media(max-width: 798px){
+        font-size: 1.2em;
+        gap: 12px;
+    }
 }
 
 /* à changer avec SASS*/
