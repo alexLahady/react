@@ -45,7 +45,7 @@ export default function Appatement(){
                 </div>
                 <div className="tag-appart">
                     <ul>
-                        {res.tags.map((tag) => <li>{tag}</li>)}
+                        {res.tags.map((tag,index) => <li key={index}>{tag}</li>)}
                     </ul>
                 </div>
                 <div className="host-appart">
@@ -54,8 +54,8 @@ export default function Appatement(){
                         <img src={res.host.picture} alt="profile" />
                     </div>
                     <span>
-                        {tab.map((istrue) => 
-                            istrue ? <i class="fa-solid fa-star"></i> : <i class="fa-solid fa-star isfalse"></i>
+                        {tab.map((istrue, index) => 
+                            istrue ? <i key={index} className="fa-solid fa-star"></i> : <i key={index} className="fa-solid fa-star isfalse"></i>
                         )}
                     </span>
                 </div>
@@ -63,7 +63,7 @@ export default function Appatement(){
                     {Animation(res.id+'desc','Description',res.description)}
                 </div>
                 <div className='equipement-appart'>
-                    {Animation(res.id+'equip','Équipement', <ul>{res.equipments.map((equip) => <li>{equip}</li>)}</ul>)}
+                    {Animation(res.id+'equip','Équipement', <ul>{res.equipments.map((equip,index) => <li key={index}>{equip}</li>)}</ul>)}
                 </div>
             </div>
             <Footer />

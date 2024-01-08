@@ -28,9 +28,9 @@ function Animation(id, titre, element){//fait le carré rouge avec les animation
         <div id={"anime"+id} className="anime">
             <div>
                 <h2>{titre}</h2>
-                <i onClick={hidden} id={id} class="fa-solid fa-chevron-up"></i>
+                <i onClick={hidden} id={id} className="fa-solid fa-chevron-up"></i>
             </div>
-            <p id={"p"+id}>{element}</p>
+            <span id={"p"+id}>{element}</span>
       </div>
     );
 }

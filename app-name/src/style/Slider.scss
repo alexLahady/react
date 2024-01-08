@@ -2,14 +2,17 @@
 
 //enlever les espace avec les positon asbolu
 // augmenter le padding de la div
+//faire les position absolu pour les flèche 
 .slide {
     //position: relative;
+    animation: taadaa 2s;
+
     i {
         font-size: 5em;
         color: white;
     }
     .fa-chevron-left {
-        transform: translateX(70px) translateY(-250%);
+        transform: translateX(-1250px) translateY(-250%);
     }
     .fa-chevron-right {
        transform: translateX(-70px) translateY(-250%); 
@@ -30,3 +33,16 @@
         text-shadow: 2px 2px rgba(0, 0, 0, 0.281);
     }
 }
+
+.slide-img {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+  
