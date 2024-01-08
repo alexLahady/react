@@ -43,14 +43,6 @@
         & i {
             margin: 10px;
             font-size: 30px;
-
-            /*
-            &:hover {
-                animation-name: spin;
-                animation-duration: 1s;
-                animation-fill-mode: forwards;      
-            }
-            */
         }
     } 
 
@@ -65,12 +57,34 @@
         color: $main-color;
         background-color: $second-color;
         border-radius:0px 0px 10px 10px ;
-
-        /*animation*/
-        //animation: 3s ease-in 1s 2 reverse both paused slidein;
     }
 }
 
-.anime-margin {
-    margin-bottom: -25px;
+.anime-margin-up {
+    //margin-bottom: -24px;
+    animation-name: spaceMarginOn ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+.anime-margin-down {
+    //margin-bottom: -24px;
+    animation-name: spaceMarginOff ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+.conditionalOpen {
+    animation: conditionalOpen 1s normal forwards ease-in-out;
+    transform-origin: 50% 0%;
+}
+
+.conditionalClose {
+    animation: conditionalClose 1s normal forwards ease-in-out;
+    transform-origin: 100% 0%;
+}
+
+.anime-spin {
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;      
 }

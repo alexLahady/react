@@ -18,8 +18,8 @@ function About(){
         <Nav />
         {Banner(image,"paysage de montagne",false)}
         <div className="about-margin" >
-          {about.map((tab) => 
-            Animation(tab.id,tab.title,tab.text)
+          {about.map((tab,index) => 
+            Animation(tab.id,tab.title,tab.text,index)
           )}
           
         </div>

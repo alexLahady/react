@@ -11,7 +11,7 @@
     from {
       background: rgba(255, 255, 255, 0);
     } to {
-      background: rgba(255, 255, 255, 0.5);
+      background-color: rgba(0,0,0,0.8);
     }
   }
   
@@ -28,4 +28,24 @@
     100% {
       opacity: 1;
     }
+  }  
+      
+  @keyframes conditionalOpen {
+      from { transform: scaleY(0) }
+      to { transform: scaleY(1) }
+  }
+
+  @keyframes conditionalClose {
+      from { transform: scaleY(1) }
+      to { transform: scaleY(0) }
+  }
+
+  @keyframes spaceMarginOn {
+    from {margin-bottom:100px ;}
+    to { margin-bottom: -24px;}
+  }
+
+  @keyframes spaceMarginOff {
+    from {margin-bottom:-24px ;}
+    to { margin-bottom: 100px;}
   }
