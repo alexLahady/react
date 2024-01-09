@@ -22,7 +22,7 @@
 
     & a {
       position: relative;
-      background-color: $main-color;
+      background: linear-gradient(180deg, #ffffff 0%,$main-color 0%, #000000 100%);
       width: 340px;
       height: 340px;
       margin:20px;
@@ -46,5 +46,5 @@
   }
 
 
-  
+
   
