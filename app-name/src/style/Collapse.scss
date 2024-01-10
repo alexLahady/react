@@ -51,7 +51,7 @@
         border-radius:0px 0px 10px 10px ;
     }
 }
-
+/* Les différentes animation*/
 .anime-margin-up {
     animation-name: spaceMarginOn ;
     animation-duration: 1s;
@@ -73,8 +73,14 @@
     transform-origin: 100% 0%;
 }
 
-.anime-spin {
-    animation-name: spin;
-    animation-duration: 1.5s;
+.anime-spin-down {
+    animation-name: spinDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;      
+}
+
+.anime-spin-up {
+    animation-name: spinUp;
+    animation-duration: 1s;
     animation-fill-mode: forwards;      
 }

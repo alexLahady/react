@@ -4,12 +4,12 @@ import '../style/Banner.scss';
 
 function Banner(image,text,istrue) {
     return (
-      <div className="Banner">
-        <section className="Banner-header">
+      <section className="Banner">
+        <div className="Banner-header">
           {istrue ? <img src={image} className='Banner-img istrue' alt={text} /> : <img src={image} className='Banner-img' alt={text} />}
           {istrue ? <span className='Banner-text'>Chez vous, partout et ailleurs</span> : <span className='Banner-text'></span>}
-        </section>
-      </div>
+        </div>
+      </section>
     );
   }
   

@@ -7,15 +7,15 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
     return (
-      <div className="Nav">
-        <header className="Nav-header">
+      <header className="Nav">
+        <nav className="Nav-header">
         <img src={logo} className='Nav-logo' alt='logo-kasa'/>
           <ul className='Nav-menu'>
             <li><NavLink to={'/'}>Accueil</NavLink></li>
             <li><NavLink to={'/about'}>À propos</NavLink></li>
           </ul>
-        </header>
-      </div>
+        </nav>
+      </header>
     );
   }
   
