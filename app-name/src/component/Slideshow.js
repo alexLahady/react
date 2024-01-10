@@ -17,7 +17,7 @@ function Slideshow(tab_img){
                 {opacity : 1},
             ],
             {
-                duration : 2000
+                duration : 1000
             },
         );
     };
