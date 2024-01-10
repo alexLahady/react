@@ -5,12 +5,13 @@
 }
 
 
-//GIRD COMMENCE LA 
+//Grid des différentes information 
+
+
 .grid-appart {
     display: grid;
     margin-top: -55px;
     margin-bottom: 100px;
-    //background-color: grey;//temporaire
     grid-template-columns: repeat(3, 1fr);
 
 }
@@ -116,7 +117,7 @@
     }
 }
 
-/*problème de taille*/
+
 .description-appart {
     grid-column: 1/3;
     grid-row: 3;

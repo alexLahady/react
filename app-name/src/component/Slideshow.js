@@ -1,8 +1,11 @@
-import "../style/Slider.scss";
+import "../style/Slideshow.scss";
 import { useState } from "react";
 
+//Fonction Slideshow permet de faire un carousel. Il marhe en fonction du tableau d'image reçu,
+//et les flèche permet d'incrementer ou décrementer en fonction du clique de l'utilisateur,
+//et faire une animation d'opacité à chaque clique
 
-function Slider(tab_img){
+function Slideshow(tab_img){
     const [count, setCount] = useState(0);
 
     const incremente = () => {
@@ -43,4 +46,4 @@ function Slider(tab_img){
     );
 }
 
-export default Slider;
+export default Slideshow;

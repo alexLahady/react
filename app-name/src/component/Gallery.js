@@ -2,20 +2,18 @@ import '../style/Gallery.scss';
 import kasa from '../asset/kasa.json';
 import { Link } from "react-router-dom";
 
-
-let res = kasa;//json
-//console.table(res);
+//Fonction Gallery qui permet d'afficher tous les cubes avec le titre et l'id en fonction des informations données
 
 function Gallery() {
   return (
     <div className="App">
-      <header className="App-header">
-      {res.map((tab) => (
+      <div className="App-header">
+      {kasa.map((tab) => (
         <Link to={"/flat/"+tab.id} key={ tab.id }>
           <p>{tab.title}</p>
         </Link>
       ))}
-      </header>
+      </div>
     </div>
   );
 }

@@ -1,14 +1,6 @@
 @import '../utils/mixin.scss';
 @import '../utils/variable.scss';
 
-
-/* c'est la ou il y aura le carré avec les aniamtion*/
-
-.anime-efface {
-    display: none;
-   
-}
-
 .anime {
     position: relative;
     margin : 20px;
@@ -61,13 +53,11 @@
 }
 
 .anime-margin-up {
-    //margin-bottom: -24px;
     animation-name: spaceMarginOn ;
     animation-duration: 1s;
     animation-fill-mode: forwards; 
 }
 .anime-margin-down {
-    //margin-bottom: -24px;
     animation-name: spaceMarginOff ;
     animation-duration: 1s;
     animation-fill-mode: forwards; 

@@ -2,16 +2,17 @@ import React from 'react';
 
 import Nav from '../component/Nav';
 import Footer from '../component/Footer';
-import Animation from '../component/Animation';
-import Slider from '../component/Slider';
+import Collapse from '../component/Collapse';
+import Slideshow from '../component/Slideshow';
 
 import '../style/Appartement.scss';
 import kasa from '../asset/kasa.json';
 
 import {useParams} from 'react-router-dom';
 
-/* Faire une fonction qui va récupérer l'id et enregistrer et utiliser les bonnes données*/
 
+/* Fonction Appartement qui affiche toutes les informations données sur une page.
+La page est dynamique et affiche une page différentes en fonction de l'id reçu. */
 
 export default function Appatement(){
     const parametres = useParams();
@@ -30,13 +31,12 @@ export default function Appatement(){
         i < res.rating ? tab.push(true) : tab.push(false);
         i++;
     }
-    //console.log(tab);
 
     return (
         <div className="Appartement">
             <Nav />
             <div className="banner-appart">
-                {Slider(res.pictures)}
+                {Slideshow(res.pictures)}
             </div>
             <div className="grid-appart">
                 <div className="title-appart">
@@ -60,10 +60,10 @@ export default function Appatement(){
                     </span>
                 </div>
                 <div className="description-appart">
-                    {Animation(res.id+'desc','Description',res.description)}
+                    {Collapse(res.id+'desc','Description',res.description)}
                 </div>
                 <div className='equipement-appart'>
-                    {Animation(res.id+'equip','Équipement', <ul>{res.equipments.map((equip,index) => <li key={index}>{equip}</li>)}</ul>)}
+                    {Collapse(res.id+'equip','Équipement', <ul>{res.equipments.map((equip,index) => <li key={index}>{equip}</li>)}</ul>)}
                 </div>
             </div>
             <Footer />

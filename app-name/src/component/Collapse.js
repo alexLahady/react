@@ -1,24 +1,29 @@
 import React from 'react'; 
-import '../style/Animation.scss';
+import '../style/Collapse.scss';
+import { useState } from "react";
 
+//Fonction Collpase pour dérouler le texte en fonction de la flèche si elle est en haut ou en bas 
 
-function Animation(id, titre, element,key){
+function Collapse(id, titre, element,key){
+    const [arrow,  setArrow] = useState(1);
+
     const hidden = () => {
         let element = document.getElementById(id);
         let text = document.getElementById("p"+id);
         let anime = document.getElementById("anime"+id);
   
-        if(element.classList == "fa-solid fa-chevron-up"){
+        if(arrow === 1){
             element.classList = "fa-solid fa-chevron-down ";
             text.classList = "conditionalClose";
             anime.classList = "anime anime-margin-up";
+            setArrow(arrow - 1);
             
         }else{
             element.classList = "fa-solid fa-chevron-up";
             text.classList = "conditionalOpen";
             anime.classList = "anime anime-margin-down";
+            setArrow(arrow + 1);
         }
-        console.log(anime);
       }
     
 
@@ -33,4 +38,4 @@ function Animation(id, titre, element,key){
     );
 }
 
-export default Animation;
+export default Collapse;

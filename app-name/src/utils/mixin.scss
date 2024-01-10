@@ -1,26 +1,14 @@
-@keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(180deg);
-    }
-  }
-  
-  @keyframes opacity {
+/*L'opacité des flèche du carousel*/
+@keyframes opacity {
     from {
       background: rgba(255, 255, 255, 0);
     } to {
       background-color: rgba(0,0,0,0.8);
     }
   }
-  
-  @keyframes slidein {
-    from { transform: scaleY(0); }
-    to   { transform: scaleY(1); }
-  }
 
-  @keyframes taadaa { 
+/*L'opacité quand une image change ou apparait */
+@keyframes taadaa { 
     0% {
       opacity: 0;
     }
@@ -29,23 +17,26 @@
       opacity: 1;
     }
   }  
-      
-  @keyframes conditionalOpen {
+
+/*Pour la fonction Collpase permet de dérouler le texte*/
+@keyframes conditionalOpen {
       from { transform: scaleY(0) }
       to { transform: scaleY(1) }
   }
 
-  @keyframes conditionalClose {
+/*Pour la fonction Collpase permet de cacher le texte*/
+@keyframes conditionalClose {
       from { transform: scaleY(1) }
       to { transform: scaleY(0) }
   }
 
-  @keyframes spaceMarginOn {
+/* des margin pour les espaces vides */
+@keyframes spaceMarginOn {
     from {margin-bottom:100px ;}
     to { margin-bottom: -24px;}
   }
 
-  @keyframes spaceMarginOff {
+@keyframes spaceMarginOff {
     from {margin-bottom:-24px ;}
     to { margin-bottom: 100px;}
   }
