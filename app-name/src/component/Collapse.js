@@ -13,27 +13,27 @@ function Collapse(id, titre, element,key){
         let anime = document.getElementById("anime"+id);
   
         if(arrow === 1){
-            element.classList = "fa-solid fa-chevron-up anime-spin-down";
-            text.classList = "conditionalClose";
-            anime.classList = "anime anime-margin-up";
+            element.classList = "fa-solid fa-chevron-down anime-spin-down";
+            text.classList = "conditionalOpen";
+            anime.classList = "anime anime-margin-down";
             setArrow(arrow - 1);
             
         }else{
-            element.classList = "fa-solid fa-chevron-up anime-spin-up";
-            text.classList = "conditionalOpen";
-            anime.classList = "anime anime-margin-down";
+            element.classList = "fa-solid fa-chevron-down anime-spin-up";
+            text.classList = "conditionalClose";
+            anime.classList = "anime anime-margin-up";
             setArrow(arrow + 1);
         }
       }
     
 
     return(
-        <div key={key} id={"anime"+id} className="anime">
+        <div key={key} id={"anime"+id} className="anime anime-margin">
             <div>
                 <h2>{titre}</h2>
-                <i onClick={hidden} id={id} className="fa-solid fa-chevron-up"></i>
+                <i onClick={hidden} id={id} className="fa-solid fa-chevron-down"></i>
             </div>
-            <span id={"p"+id}>{element}</span>
+            <span id={"p"+id} className="anime-hide">{element}</span>
       </div>
     );
 }

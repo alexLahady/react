@@ -8,23 +8,29 @@
         object-fit: cover;
         object-position: center;
         border-radius: 20px;
+
+        @media(max-width: 798px){
+            object-position: 100% 60%;
+        }
     }
 }
 
 .Banner-text {
    position: absolute;
-    left: 30%;
-    top: 42%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
 
     color: white;
     font-size: 3em;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.205);
+    text-align: left;
 
     @media(max-width: 798px){
+        left: 35%;
         font-size: 1.2em;
-        left: 8%;
-        top: 45%;
-        width: 160px;
+        width: 190px;
+        font-size: 1.5em;
         text-align: left;
     }
 

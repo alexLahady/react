@@ -1,6 +1,11 @@
 @import '../utils/mixin.scss';
 @import '../utils/variable.scss';
 
+
+.anime-hide {
+    display: none;
+}
+
 .anime {
     position: relative;
     margin : 20px;
@@ -51,6 +56,13 @@
         border-radius:0px 0px 10px 10px ;
     }
 }
+
+.anime-margin {
+    margin-bottom: -24px;
+}
+
+
+
 /* Les différentes animation*/
 .anime-margin-up {
     animation-name: spaceMarginOn ;
@@ -75,12 +87,13 @@
 
 .anime-spin-down {
     animation-name: spinDown;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;      
 }
 
 .anime-spin-up {
     animation-name: spinUp;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;      
 }
+
