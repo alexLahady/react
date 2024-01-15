@@ -23,7 +23,6 @@ export default function Appatement(){
         if(kasa[i].id === parametres.id){
             res = kasa[i] ;
             exist = true;
-            //console.log("il est vrai");
             break;
         }
     }
@@ -77,7 +76,6 @@ export default function Appatement(){
 
         );
     }else{
-        //document.location.href="../error-page";// pas comme ça 
         return(
             <div>
                 <ErrorPage />
