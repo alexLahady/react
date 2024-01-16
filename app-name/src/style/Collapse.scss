@@ -69,10 +69,18 @@
     animation-duration: 1s;
     animation-fill-mode: forwards; 
 }
+
 .anime-margin-down {
     animation-name: spaceMarginOff ;
     animation-duration: 1s;
     animation-fill-mode: forwards; 
+
+    @media( max-width: 798px){
+        animation-name: spaceMarginOffResponsive;
+        animation-duration: 1s;
+        animation-fill-mode: forwards; 
+
+    }
 }
 
 .conditionalOpen {

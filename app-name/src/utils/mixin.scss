@@ -57,7 +57,12 @@
     to { margin-bottom: -24px;}
   }
 
+@keyframes spaceMarginOffResponsive {
+    from {margin-bottom:-24px ;}
+    to { margin-bottom: 150px;}
+}
+
 @keyframes spaceMarginOff {
     from {margin-bottom:-24px ;}
-    to { margin-bottom: 100px;}
+    to { margin-bottom: 60px;}
   }
