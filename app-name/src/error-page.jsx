@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Nav from './component/Nav.js';
+import Nav from './component/Nav';
 import './error-page.scss';
 
 
